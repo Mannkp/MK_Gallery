@@ -1,0 +1,121 @@
+body{
+    margin:0px;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    background-color: #f6fff8;
+}
+h1{
+    margin:0.5em;
+    padding:0.2em;
+    font-size: 3em;
+    border-bottom: 4px solid #03071e;
+    letter-spacing: 0.3em;
+}
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+main{
+    margin-top: 10%;
+}
+/* header{ 
+    margin: 10% auto;
+} */
+nav{
+    margin: 0;
+    position: fixed;
+    top:0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #03071e;
+    font-size: 1.5em;
+}
+nav a{
+    padding:1% 1%;
+    margin:0;
+}
+a:link, a:visited{
+    color: #f6fff8;
+    text-decoration: none;
+}
+a:hover{
+    color: #03071e;
+    background-color: white;
+    padding:auto;
+}
+/* img{
+    height:inherit; 
+    width:inherit; 
+    -webkit-filter: grayscale(100%); Safari 6.0 - 9.0 
+    filter: grayscale(100%); 
+} */
+
+img {
+    /* object-fit: contain; */
+    object-fit: cover;
+    /* height: 400px !important; */
+    /* height: auto; */
+    height: 45vh !important;
+    width: 30%;
+    margin: calc(10% / 6);
+}
+
+@media (min-width: 200px) and (max-width: 600px){
+    body{
+        margin:0px;
+        font-family: 'Roboto', sans-serif;
+        font-family: 'Roboto Mono', monospace;
+        background-color: #f6fff8;
+    }
+    h1{
+        margin:0.2em;
+        padding:0.2em;
+        font-size: 2em;
+        text-align: center;
+        border-bottom: 4px solid #03071e;
+        letter-spacing: 0.3em;
+    }
+    section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    img {
+        object-fit: cover;
+        height: 30vh !important;
+        width: 40%;
+    }
+    main{
+        margin-top: 20%;
+    }
+    nav{
+        margin: 0;
+        position: fixed;
+        top:0;
+        /* width: 100%; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #03071e;
+        font-size: 0.7em;
+    }
+    nav a{
+
+    }
+    a:link, a:visited{
+        color: #f6fff8;
+        text-decoration: none;
+    }
+    a:hover{
+        color: #03071e;
+        background-color: white;
+        padding:auto;
+    }
+}
